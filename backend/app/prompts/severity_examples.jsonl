@@ -1,0 +1,4 @@
+{"input":"Minor wording change / schedule note","output":{"severity":"INFO","title":"Minor schedule change","message":"Minor schedule change reported. Monitor for updates.","evidence_sources":["511"]}}
+{"input":"Official service alert: single-train delay 20 min","output":{"severity":"WARNING","title":"Notice of delay","message":"Caltrain delay expected (~20 min). Check updates before heading out.","evidence_sources":["511"]}}
+{"input":"Multiple riders report platform delays + trip disrupted","output":{"severity":"CRITICAL","title":"Severe disruption","message":"Major disruption reported. Expect long delays and consider alternate transport.","evidence_sources":["reddit"]}}
+{"input":"No real delay mentioned; speculation only","output":{"severity":"NO_ALERT","title":"No disruption detected","message":"No confirmed service disruption in the report.","evidence_sources":["reddit"]}}
