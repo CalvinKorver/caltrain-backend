@@ -12,4 +12,4 @@ COPY backend/ /app/backend/
 ENV PYTHONPATH=/app/backend
 
 # Default process (Railway will override via Procfile process types).
-CMD ["bash", "-lc", "cd /app/backend && uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
+CMD ["bash", "-lc", "alembic -c /app/backend/alembic.ini upgrade head && uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
